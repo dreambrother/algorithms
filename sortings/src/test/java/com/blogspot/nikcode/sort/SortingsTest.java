@@ -9,7 +9,7 @@ import org.junit.Test;
  *
  * @author nik
  */
-public class InsertionSortTest {
+public class SortingsTest {
 
     @Test
     public void testInsertionSort() {
