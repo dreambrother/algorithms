@@ -16,17 +16,17 @@ class TestSortings(unittest.TestCase):
         actual = sortings.merge_sort(self.origin_arr)
         self.assertEqual(self.sorted_arr, actual)
 
-    def testMergeSortWithOneElement(self):
+    def test_merge_sort_with_one_element(self):
         arr = [5]
         actual = sortings.merge_sort(arr)
         self.assertEqual(arr, actual)
 
-    def testMergeSortWithOTwoElements(self):
+    def test_merge_sort_with_two_elements(self):
         arr = [5, 2]
         actual = sortings.merge_sort(arr)
         self.assertEqual([2, 5], actual)
 
-    def testMergeSortWithOThreeElements(self):
+    def test_merge_sort_with_three_elements(self):
         arr = [ 5, 2, 7 ];
         actual = sortings.merge_sort(arr)
         self.assertEqual([2, 5, 7], actual)
