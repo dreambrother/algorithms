@@ -14,8 +14,8 @@ def insertion_sort(arr):
 
 def merge_sort(arr):
     if len(arr) == 1:
-        return arr;
-    middlePos = len(arr) / 2;
+        return arr
+    middlePos = len(arr) / 2
     return _merge(merge_sort(arr[0:middlePos]), merge_sort(arr[middlePos:len(arr)]))
 
 def _merge(arr1, arr2):
@@ -38,4 +38,4 @@ def _merge(arr1, arr2):
                 result.insert(i, arr2[idx2])
                 i += 1
                 idx2 += 1
-    return result;
+    return result
