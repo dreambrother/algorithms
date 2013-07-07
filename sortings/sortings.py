@@ -1,5 +1,6 @@
 __author__ = 'nik'
 
+
 def insertion_sort(arr):
     result = arr[:]
     for j in range(1, len(result)):
@@ -18,8 +19,11 @@ def merge_sort(arr):
     middlePos = len(arr) / 2
     return _merge(merge_sort(arr[0:middlePos]), merge_sort(arr[middlePos:len(arr)]))
 
+
 def _merge(arr1, arr2):
-    result = []; idx1 = 0; idx2 = 0
+    result = []
+    idx1 = 0
+    idx2 = 0
     for i in range(0, len(arr1) + len(arr2)):
         if idx1 < len(arr1) and idx2 < len(arr2):
             if arr1[idx1] < arr2[idx2]:

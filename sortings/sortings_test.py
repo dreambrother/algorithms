@@ -3,6 +3,7 @@ __author__ = 'nik'
 import unittest
 import sortings
 
+
 class TestSortings(unittest.TestCase):
 
     origin_arr = [8, 3, 1, 8, 10, 5]
@@ -27,7 +28,7 @@ class TestSortings(unittest.TestCase):
         self.assertEqual([2, 5], actual)
 
     def test_merge_sort_with_three_elements(self):
-        arr = [ 5, 2, 7 ];
+        arr = [5, 2, 7]
         actual = sortings.merge_sort(arr)
         self.assertEqual([2, 5, 7], actual)
 
