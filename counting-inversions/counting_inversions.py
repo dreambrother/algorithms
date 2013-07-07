@@ -24,7 +24,7 @@ def _sort_and_count_split_inversions(arr1, arr2):
             else:
                 result.insert(i, arr2[idx2])
                 if arr2[idx2] < arr1[idx1]:
-                    inversions_count += 1
+                    inversions_count += len(arr1) - idx1
                 idx2 += 1
         elif idx1 < len(arr1):
             while idx1 < len(arr1):
