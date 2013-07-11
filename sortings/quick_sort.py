@@ -2,15 +2,19 @@ __author__ = 'nik'
 
 
 def quick_sort(array):
-    if len(array) < 2:
-        return array
-    p = _choose_pivot(array)
-    p = _partition(array, p)
-    left_part = array[:p]
-    right_part = array[p + 1:]
+    result = array[:]
+    if len(result) < 2:
+        return result
+    p = _choose_pivot(result)
+    p = _partition(result, p)
+
+    left_part = result[:p]
+    right_part = result[p + 1:]
+
     left_part = quick_sort(left_part)
     right_part = quick_sort(right_part)
-    left_part.append(array[p])
+
+    left_part.append(result[p])
     return left_part + right_part
 
 
@@ -27,4 +31,6 @@ def _partition(array, p_index):
 
 
 def _choose_pivot(array):
-    return 0
+    p = 0
+    array[0], array[p] = array[p], array[0]
+    return p
