@@ -3,6 +3,7 @@ __author__ = 'nik'
 import unittest
 import knn
 
+
 class TestKnn(unittest.TestCase):
 
     # (genre, # of kisses, # of kicks)
