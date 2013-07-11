@@ -4,8 +4,8 @@ __author__ = 'nik'
 def merge_sort(arr):
     if len(arr) == 1:
         return arr
-    middlePos = len(arr) / 2
-    return _merge(merge_sort(arr[0:middlePos]), merge_sort(arr[middlePos:len(arr)]))
+    middle_pos = len(arr) / 2
+    return _merge(merge_sort(arr[0:middle_pos]), merge_sort(arr[middle_pos:len(arr)]))
 
 
 def _merge(arr1, arr2):

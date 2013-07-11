@@ -4,7 +4,7 @@ import unittest
 import insertion_sort
 
 
-class TestSortings(unittest.TestCase):
+class TestInsertionSort(unittest.TestCase):
 
     origin_arr = [8, 3, 1, 8, 10, 5]
     sorted_arr = [1, 3, 5, 8, 8, 10]
