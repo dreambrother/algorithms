@@ -30,19 +30,6 @@ class SccTest(TestCase):
         result = scc._replace_nodes_by_finish_times(edges_list, finish_times)
         self.assertEqual(result, {1: [], 2: [1, 4], 3: [], 4: [1, 3]})
 
-    # def test_coursera(self):
-    #     edges_list = {}
-    #     with open('/Users/nik/tmp/SCC.txt') as f:
-    #         for line in f.readlines():
-    #             key, value = line.split()
-    #             if key not in edges_list:
-    #                 edges_list[key] = []
-    #             edges_list[key].append(value)
-    #
-    #     result = scc.execute(edges_list).values()
-    #     result.sort(reverse=True)
-    #     print result[:5]
-
 
 if __name__ == '__main__':
     sys.setrecursionlimit(100000)
