@@ -37,11 +37,10 @@ def _replace(elem, by, list):
     return [x if x != elem else by for x in list]
 
 
-#adjacency_list = {1: [2, 3, 4], 2: [1, 3, 5], 3: [1, 2, 4], 4: [1, 3], 5: [2]}
+adjacency_list = {1: [2, 3, 4], 2: [1, 3, 5], 3: [1, 2, 4], 4: [1, 3], 5: [2]}
 
 results = []
 for i in range(10):
-    adjacency_list = load_graph('/Users/nik/tmp/kargerMinCut.txt')
     find_min_cut(adjacency_list)
     first_edges_count, second_edges_count = \
         len(adjacency_list[adjacency_list.keys()[0]]), len(adjacency_list[adjacency_list.keys()[1]])
