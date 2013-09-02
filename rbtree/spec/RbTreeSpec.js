@@ -61,4 +61,16 @@ describe("RbTree", function() {
 
         expect(tree.get(1)).toBe("val2");
     });
+
+    it("should add and found multiple nodes", function() {
+        var nodes = [];
+        var tree = new RbTree();
+        for (var i = 0; i < 50; i++) {
+            nodes[i] = { key: i, value: "val" + i };
+            tree.add(nodes[i].key, nodes[i].value);
+        }
+        for (var i = 0; i < 50; i++) {
+            expect(tree.get(nodes[i].key)).toBe(nodes[i].value);
+        }
+    });
 });
